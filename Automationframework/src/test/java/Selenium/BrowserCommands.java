@@ -36,8 +36,6 @@ public class BrowserCommands {
         //capture the pagesource of the webpage
         System.out.println("The pagesource of the webpage is:"+driver.getPageSource());
 
-
-
         //close the browser
         driver.close();
     }

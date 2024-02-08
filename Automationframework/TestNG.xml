@@ -5,6 +5,7 @@
         <classes>
             <!--<class name="seleniumtests.LoginTest"/>-->
             <class name="Selenium.BrowserCommands"/>
+            <class name="Selenium.DropdownusingSelectclass"/>
         </classes>
     </test>
 </suite>
