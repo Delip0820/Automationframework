@@ -25,9 +25,9 @@ public class selectfirsttwocheckboxes {
             }
         }*/
 
-        //select first 3 checkboxes
+        //select first  checkbox
         for(int i=0;i<cbsize;i++){
-            if(i<3){
+            if(i<1){
                 checkboxlist.get(i).click();
             }
         }
