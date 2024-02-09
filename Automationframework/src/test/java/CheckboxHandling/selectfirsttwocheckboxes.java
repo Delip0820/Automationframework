@@ -17,12 +17,20 @@ public class selectfirsttwocheckboxes {
         List<WebElement> checkboxlist=driver.findElements(By.xpath("//input[@type='checkbox' and @class='cb1-element']"));
         System.out.println(checkboxlist.size());
 
+        //selecting first two checkboxes
         int cbsize=checkboxlist.size();
-        for(int i=0;i<cbsize;i++){
+        /*for(int i=0;i<cbsize;i++){
             if(i<2){
                 checkboxlist.get(i).click();
             }
+        }*/
 
+        //select first  checkbox
+        for(int i=0;i<cbsize;i++){
+            if(i<1){
+                checkboxlist.get(i).click();
+            }
         }
+
     }
 }
