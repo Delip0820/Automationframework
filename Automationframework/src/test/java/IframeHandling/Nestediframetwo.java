@@ -7,11 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class Nestediframetwo {
-    public static void main(String[] args) {
+    @Test
+    public void nestedIframetwo() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
@@ -49,6 +51,7 @@ public class Nestediframetwo {
             System.out.println("The values inside the dropdown are:"+animal.getText());
         }
         drpdownlist.selectByVisibleText("Big Baby Cat");
+        driver.close();
 
     }
 }

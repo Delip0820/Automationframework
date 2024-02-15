@@ -3,9 +3,11 @@
 <suite name="Testing nopcommerce login">
     <test name="Regression">
         <classes>
-            <!--<class name="seleniumtests.LoginTest"/>-->
             <class name="Selenium.BrowserCommands"/>
             <class name="Selenium.DropdownusingSelectclass"/>
+            <class name="IframeHandling.IframeHandle"/>
+            <class name="IframeHandling.Nestediframeone"/>
+            <class name="IframeHandling.Nestediframetwo"/>
         </classes>
     </test>
 </suite>
