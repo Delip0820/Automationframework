@@ -5,10 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class IframeHandle {
 
-    public static void main(String[] args) {
+    @Test
+    public void iframehandle() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
@@ -20,5 +22,6 @@ public class IframeHandle {
         System.out.println("The text inside the iframe bar is:"+iframetextbar.getText());
         iframetextbar.clear();
         iframetextbar.sendKeys("Clearing the text and add new text inside iframe");
+        driver.close();
     }
 }

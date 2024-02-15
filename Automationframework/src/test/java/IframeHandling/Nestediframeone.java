@@ -5,9 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Nestediframeone {
-    public static void main(String[] args) {
+    @Test
+    public void nestedIframe() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
@@ -19,5 +21,6 @@ public class Nestediframeone {
         driver.switchTo().frame(innerframe);
         WebElement iframetext=driver.findElement(By.xpath("//body/h1"));
         System.out.println(iframetext.getText());
+        driver.close();
     }
 }
